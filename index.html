@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <title> Minha pagina </title>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="js/main.js" ></script> 
+
+    </head>
+    <body onload="load()">
+        <!--Cria um botão escrito "clique aqui-->
+        <button type="button" onclick = "clicou()">Clique aqui </button>
+
+        <!--Redireciona a para outra pagina-->
+        <p id="Agradecimento" onclick="redirecionar()" ></p>
+
+        <!--Criado um paragrafo com a funcionalidade de passar o mouse em cima-->
+        <!--<p id="mousemove" onmouseover="trocar()" >Passe o mouse aqui</p> -->     
+        
+        <!--Fazendo a frase mudar quando o mouse estiver em cima e voltar quando nao estiver mais-->
+        <!--<p id="mousemove" onmouseover="trocar()" onmouseout="voltar()" >Passe o mouse aqui</p> -->
+
+        <!--Outro jeito de fazer a mesma coisa-->
+        <!--<p id="mousemove2" onmouseover="trocar(this)" onmouseout="voltar(this)" >Passe o mouse aqui</p>-->
+
+        <!--Outro jeito ainda, podemos tirar o "id"-->
+        <p onmouseover="trocar(this)" onmouseout="voltar(this)" >Passe o mouse aqui</p>
+        <p onmouseover="trocar(this)" onmouseout="voltar(this)" >Passe o mouse aqui</p>
+        <p onmouseover="trocar(this)" onmouseout="voltar(this)" >Passe o mouse aqui</p>
+
+
+<!--Com a função onchange sempre que o usuario alterar o valor, nos vamos saber-->
+        <select onchange="funcaochange(this)">
+            <option value="1">Valor 1</option>
+            <option value="2">Valor 2</option>
+            <option value="3">Valor 3</optio/n>        
+        </select>
+    </body>
+</html>
